@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header class="header">
+        <section class="image">
+          <img src="./download.jpg">
+        </section>
+        <section class="nav">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h1>EduRecord Portal</h1>
+            <h2>Responsive Student Registration</h2>
+            <nav class="nav-btn">
+                <button><a>About</a></button>
+                <button><a>Contact</a></button>
+                <button><a>Login</a></button>
+            </nav> 
+        </section>    
+    </header>
+    <main>
+        <form>
+            <h2>Student Registration Form</h2>
+            <section class="main-form">
+            <input id="firstname" type="text" placeholder="First Name" required>           
+            <input id="lastname" type="text" placeholder="Last Name" required>           
+            <input id="email" type="email" placeholder="Email" required>            
+            <textarea id="address" type="text" placeholder="Address" required></textarea>       
+            <input id="pincode" type="number" placeholder="Pincode" required></form>
+            <label for="">Gender</label>           
+            <label for="male"><input type="radio" name="gender" value="male" required>Male</label>
+            <label for="female"><input type="radio" name="gender" value="female" required>Female</label>           
+            <input id="state" type="text" placeholder="State" required>            
+            <input id="country" type="text" placeholder="Country" required>
+            </section>
+            <section class="button">
+            <button id="btn" type="submit">Submit</button> 
+            <button id="reset" type="reset">Reset</button>          
+            </section>
+        </form>
+        <section>
+            <table id="table" border="1">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
